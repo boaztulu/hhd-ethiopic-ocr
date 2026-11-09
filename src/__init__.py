@@ -1,0 +1,1 @@
+"""HHD-Ethiopic project package."""

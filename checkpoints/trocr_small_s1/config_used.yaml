@@ -1,0 +1,24 @@
+model:
+  name: trocr
+  kwargs:
+    base_name: microsoft/trocr-small-handwritten
+    max_len: 64
+    freeze_encoder_first_epoch: true
+image:
+  height: 384
+  width: 384
+  preserve_aspect: true
+augment:
+  level: light
+max_text_len: 60
+train:
+  epochs: 30
+  batch_size: 16
+  num_workers: 4
+  lr: 5.0e-05
+  weight_decay: 0.01
+  warmup_steps: 1000
+  grad_accum: 2
+eval:
+  batch_size: 32
+val_seed: 0

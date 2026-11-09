@@ -1,0 +1,36 @@
+{
+  "test_I|uncertain_frames": 18.34220888636589,
+  "test_I|greedy": {
+    "sub": 7501,
+    "ins": 1822,
+    "del": 2087,
+    "vowel": 3415,
+    "base": 3107,
+    "nonsyll": 979
+  },
+  "test_I|beam_lm": {
+    "sub": 6988,
+    "ins": 2009,
+    "del": 1961,
+    "vowel": 3255,
+    "base": 2788,
+    "nonsyll": 945
+  },
+  "test_II|uncertain_frames": 26.34463124969454,
+  "test_II|greedy": {
+    "sub": 42596,
+    "ins": 4885,
+    "del": 13559,
+    "vowel": 17835,
+    "base": 19882,
+    "nonsyll": 4879
+  },
+  "test_II|beam_lm": {
+    "sub": 37921,
+    "ins": 5068,
+    "del": 13381,
+    "vowel": 16545,
+    "base": 17119,
+    "nonsyll": 4257
+  }
+}

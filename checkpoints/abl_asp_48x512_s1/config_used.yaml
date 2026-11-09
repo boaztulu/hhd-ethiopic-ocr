@@ -1,0 +1,25 @@
+model:
+  name: crnn
+  kwargs:
+    backbone: vgglike
+    lstm_hidden: 256
+    lstm_layers: 2
+    dropout: 0.1
+image:
+  height: 48
+  width: 512
+  preserve_aspect: true
+augment:
+  level: medium
+max_text_len: 80
+train:
+  epochs: 80
+  batch_size: 96
+  num_workers: 2
+  lr: 0.001
+  weight_decay: 0.0
+  warmup_steps: 500
+  grad_accum: 1
+eval:
+  batch_size: 192
+val_seed: 0

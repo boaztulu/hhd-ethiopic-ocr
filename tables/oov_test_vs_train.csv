@@ -1,0 +1,9 @@
+metric,value
+train_unique_chars,304
+test_I_unique_chars,253
+test_II_unique_chars,248
+dictionary_chars,306
+oov_chars_test_I,ዢ|ጿ
+oov_chars_test_II,ዢ|ጿ
+oov_rate_test_I_pct,0.0022276676319893073
+oov_rate_test_II_pct,0.000711954064723744

@@ -1,0 +1,22 @@
+abl_asp_48x512_s1 test_I greedy {"cer": 12.711, "ned": 12.722, "wer": 32.68, "seq_acc": 30.337}
+abl_asp_48x512_s1 test_I beam {"cer": 12.728, "ned": 12.726, "wer": 32.614, "seq_acc": 30.337}
+abl_asp_48x512_s1 test_I beam_lm {"cer": 12.214, "ned": 12.152, "wer": 30.762, "seq_acc": 32.329}
+abl_asp_48x512_s1 test_II greedy {"cer": 21.858, "ned": 21.731, "wer": 56.974, "seq_acc": 5.529, "del_wordspace": 5397, "del_fullstop": 1074}
+abl_asp_48x512_s1 test_II beam {"cer": 21.853, "ned": 21.718, "wer": 56.969, "seq_acc": 5.516}
+abl_asp_48x512_s1 test_II beam_lm {"cer": 20.274, "ned": 20.201, "wer": 51.874, "seq_acc": 7.33, "del_wordspace": 4872, "del_fullstop": 1094}
+abl_asp_48x512_s2 test_I greedy {"cer": 12.709, "ned": 12.764, "wer": 32.876, "seq_acc": 29.976}
+abl_asp_48x512_s2 test_I beam {"cer": 12.763, "ned": 12.788, "wer": 32.841, "seq_acc": 29.898}
+abl_asp_48x512_s2 test_I beam_lm {"cer": 12.205, "ned": 12.193, "wer": 30.771, "seq_acc": 31.969}
+abl_asp_48x512_s2 test_II greedy {"cer": 21.729, "ned": 21.621, "wer": 56.626, "seq_acc": 5.51, "del_wordspace": 5479, "del_fullstop": 1085}
+abl_asp_48x512_s2 test_II beam {"cer": 21.713, "ned": 21.589, "wer": 56.561, "seq_acc": 5.56}
+abl_asp_48x512_s2 test_II beam_lm {"cer": 20.066, "ned": 20.038, "wer": 51.298, "seq_acc": 7.424, "del_wordspace": 4906, "del_fullstop": 1111}
+abl_asp_48x512_s3 test_I greedy {"cer": 12.622, "ned": 12.744, "wer": 32.876, "seq_acc": 29.867}
+abl_asp_48x512_s3 test_I beam {"cer": 12.671, "ned": 12.767, "wer": 32.836, "seq_acc": 29.82}
+abl_asp_48x512_s3 test_I beam_lm {"cer": 12.238, "ned": 12.28, "wer": 30.98, "seq_acc": 31.373}
+abl_asp_48x512_s3 test_II greedy {"cer": 22.037, "ned": 21.929, "wer": 57.125, "seq_acc": 5.472, "del_wordspace": 5549, "del_fullstop": 1086}
+abl_asp_48x512_s3 test_II beam {"cer": 22.021, "ned": 21.884, "wer": 57.022, "seq_acc": 5.535}
+abl_asp_48x512_s3 test_II beam_lm {"cer": 20.369, "ned": 20.283, "wer": 51.794, "seq_acc": 7.355, "del_wordspace": 4893, "del_fullstop": 1116}
+test_I beam vs greedy 95% interval [0.020398793353248033, 0.0580262267731221]
+test_I beam_lm vs greedy 95% interval [-0.5343730272932964, -0.3852562990707178]
+test_II beam vs greedy 95% interval [-0.024738697433118784, 0.00035494880099164996]
+test_II beam_lm vs greedy 95% interval [-1.7244808289027058, -1.5443058655123272]

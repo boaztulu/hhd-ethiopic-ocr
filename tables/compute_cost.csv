@@ -1,0 +1,5 @@
+model,run,params,params_M,input,decoder_steps,train_epochs,train_seconds,train_hours,total_MMACs,encoder_MMACs,decoder_MMACs_per_step,ms_median_bs1,ms_median_bs32,ms_min_bs1,ms_min_bs32,ms_sd_bs1,ms_sd_bs32
+CRNN-VGG,abl_asp_48x512_s2,8863411,8.863,48x512,1,80,6011.6,1.67,5263.4,,,59.82,53.01,37.96,48.08,12.73,2.8
+CRNN-ConvNeXt,crnn_convnext_s1,31523731,31.524,48x512,1,80,5986.5,1.66,2117.7,,,51.7,33.85,26.64,28.11,8.74,2.5
+SVTR-Small,svtr_small_s1,3914371,3.914,48x512,1,80,20233.9,5.62,2499.3,,,73.56,30.59,48.32,28.48,8.94,4.8
+DiffOCR,diff_ocr_s1,9998344,9.998,48x512,12,80,17656.4,4.9,3984.1,2033.9,162.5,204.9,122.25,168.92,52.36,22.54,31.32

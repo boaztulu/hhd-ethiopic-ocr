@@ -1,0 +1,28 @@
+model:
+  name: parseq
+  kwargs:
+    max_len: 50
+    embed_dim: 256
+    enc_depth: 6
+    dec_depth: 4
+    num_heads: 4
+    perm_train: true
+    n_perms: 6
+image:
+  height: 48
+  width: 512
+  preserve_aspect: true
+augment:
+  level: medium
+max_text_len: 48
+train:
+  epochs: 80
+  batch_size: 64
+  num_workers: 4
+  lr: 0.0005
+  weight_decay: 0.05
+  warmup_steps: 1000
+  grad_accum: 1
+eval:
+  batch_size: 96
+val_seed: 0

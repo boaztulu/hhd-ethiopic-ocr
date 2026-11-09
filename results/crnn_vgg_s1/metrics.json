@@ -1,0 +1,69 @@
+{
+  "test_I": {
+    "cer": 13.092002673201158,
+    "ned": 13.467790485861853,
+    "wer": 34.09596723938396,
+    "seq_acc": 28.51764705882353,
+    "n": 6375,
+    "cer_ci95": [
+      12.684248620493161,
+      13.499633887173493
+    ],
+    "ned_ci95": [
+      13.05683868787254,
+      13.867514216232742
+    ]
+  },
+  "test_II": {
+    "cer": 22.76793501283297,
+    "ned": 22.64301574134693,
+    "wer": 58.872345249792154,
+    "seq_acc": 5.1710072168183245,
+    "n": 15935,
+    "cer_ci95": [
+      22.527258622917746,
+      23.008989413424004
+    ],
+    "ned_ci95": [
+      22.41307205035559,
+      22.865156828666098
+    ]
+  },
+  "params_M": null,
+  "best_val_cer": 12.951266294454694,
+  "best_epoch": 67,
+  "ckpt": "checkpoints/crnn_vgg_s1/last.pt",
+  "config": {
+    "model": {
+      "name": "crnn",
+      "kwargs": {
+        "backbone": "vgglike",
+        "lstm_hidden": 256,
+        "lstm_layers": 2,
+        "dropout": 0.1
+      }
+    },
+    "image": {
+      "height": 48,
+      "width": 368,
+      "preserve_aspect": false
+    },
+    "augment": {
+      "level": "light"
+    },
+    "max_text_len": 80,
+    "train": {
+      "epochs": 80,
+      "batch_size": 96,
+      "num_workers": 4,
+      "lr": 0.001,
+      "weight_decay": 0.0,
+      "warmup_steps": 500,
+      "grad_accum": 1
+    },
+    "eval": {
+      "batch_size": 192
+    },
+    "val_seed": 0
+  }
+}

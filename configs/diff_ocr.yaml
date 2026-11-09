@@ -1,0 +1,39 @@
+# DiffOCR: discrete-mask (absorbing-state) diffusion recognizer for Ethiopic.
+# Encoder: SVTR-style 3-stage transformer (~3M params).
+# Decoder: 6-layer bidirectional transformer with cross-attention to visual features.
+# Inference: 12 iterative refinement steps.
+model:
+  name: diff_ocr
+  kwargs:
+    embed_dim: 256
+    dec_depth: 6
+    num_heads: 4
+
+diffusion:
+  max_len: 50          # covers SOS + 46 chars + EOS + slack
+  n_steps: 1000        # diffusion-step embedding range (purely for the t-emb)
+  inference_steps: 12  # iterative-refinement passes at generation time
+
+image:
+  height: 48
+  width: 512
+  preserve_aspect: true
+
+augment:
+  level: medium
+
+max_text_len: 48  # covers the published 46-char maximum
+
+train:
+  epochs: 80
+  batch_size: 64
+  num_workers: 2
+  lr: 5.0e-4
+  weight_decay: 0.05
+  warmup_steps: 1500
+  grad_accum: 1
+
+eval:
+  batch_size: 64       # diffusion runs 8x decoder passes per sample → reduce vs train
+
+val_seed: 0

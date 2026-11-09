@@ -1,0 +1,35 @@
+# SVTR-Small for Ethiopic. CTC head.
+model:
+  name: svtr
+  kwargs:
+    img_size: [48, 512]
+    embed_dims: [96, 192, 256]
+    depths: [3, 6, 3]
+    num_heads: [3, 6, 8]
+    windows: [[7, 11], [7, 11], null]
+    mlp_ratio: 2.0
+    drop: 0.1
+
+image:
+  height: 48
+  width: 512
+  preserve_aspect: true
+
+augment:
+  level: medium
+
+max_text_len: 80
+
+train:
+  epochs: 80
+  batch_size: 64
+  num_workers: 4
+  lr: 5.0e-4
+  weight_decay: 0.05
+  warmup_steps: 1000
+  grad_accum: 1
+
+eval:
+  batch_size: 128
+
+val_seed: 0

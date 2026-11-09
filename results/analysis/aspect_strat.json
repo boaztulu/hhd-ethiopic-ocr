@@ -1,0 +1,206 @@
+{
+  "test_I": [
+    {
+      "bin": "<5",
+      "n": 975,
+      "frac": 15.3,
+      "cer_asp_medium": 19.47,
+      "cer_368_none": 21.52,
+      "cer_368_light": 21.3,
+      "cer_368_heavy": 21.34,
+      "d_geom_plus_med": -1.84,
+      "d_geom_plus_med_ci": [
+        -2.49,
+        -1.11
+      ],
+      "d_aug_none_light": -0.22,
+      "d_aug_light_heavy": 0.03,
+      "d_aug_light_heavy_ci": [
+        -0.56,
+        0.63
+      ]
+    },
+    {
+      "bin": "5-7.7",
+      "n": 1670,
+      "frac": 26.2,
+      "cer_asp_medium": 12.89,
+      "cer_368_none": 13.76,
+      "cer_368_light": 13.38,
+      "cer_368_heavy": 13.4,
+      "d_geom_plus_med": -0.5,
+      "d_geom_plus_med_ci": [
+        -0.74,
+        -0.26
+      ],
+      "d_aug_none_light": -0.38,
+      "d_aug_light_heavy": 0.01,
+      "d_aug_light_heavy_ci": [
+        -0.3,
+        0.36
+      ]
+    },
+    {
+      "bin": "7.7-10.7",
+      "n": 1775,
+      "frac": 27.8,
+      "cer_asp_medium": 10.8,
+      "cer_368_none": 11.42,
+      "cer_368_light": 10.99,
+      "cer_368_heavy": 10.88,
+      "d_geom_plus_med": -0.19,
+      "d_geom_plus_med_ci": [
+        -0.38,
+        0.02
+      ],
+      "d_aug_none_light": -0.43,
+      "d_aug_light_heavy": -0.11,
+      "d_aug_light_heavy_ci": [
+        -0.4,
+        0.14
+      ]
+    },
+    {
+      "bin": "10.7-14",
+      "n": 1324,
+      "frac": 20.8,
+      "cer_asp_medium": 11.3,
+      "cer_368_none": 12.08,
+      "cer_368_light": 11.45,
+      "cer_368_heavy": 11.71,
+      "d_geom_plus_med": -0.15,
+      "d_geom_plus_med_ci": [
+        -0.35,
+        0.06
+      ],
+      "d_aug_none_light": -0.62,
+      "d_aug_light_heavy": 0.26,
+      "d_aug_light_heavy_ci": [
+        -0.02,
+        0.53
+      ]
+    },
+    {
+      "bin": ">14",
+      "n": 631,
+      "frac": 9.9,
+      "cer_asp_medium": 14.51,
+      "cer_368_none": 16.58,
+      "cer_368_light": 15.23,
+      "cer_368_heavy": 14.54,
+      "d_geom_plus_med": -0.73,
+      "d_geom_plus_med_ci": [
+        -1.24,
+        -0.19
+      ],
+      "d_aug_none_light": -1.34,
+      "d_aug_light_heavy": -0.69,
+      "d_aug_light_heavy_ci": [
+        -1.41,
+        0.05
+      ]
+    }
+  ],
+  "test_II": [
+    {
+      "bin": "<5",
+      "n": 1511,
+      "frac": 9.5,
+      "cer_asp_medium": 33.13,
+      "cer_368_none": 37.02,
+      "cer_368_light": 35.67,
+      "cer_368_heavy": 36.13,
+      "d_geom_plus_med": -2.54,
+      "d_geom_plus_med_ci": [
+        -3.08,
+        -2.04
+      ],
+      "d_aug_none_light": -1.35,
+      "d_aug_light_heavy": 0.46,
+      "d_aug_light_heavy_ci": [
+        -0.16,
+        1.07
+      ]
+    },
+    {
+      "bin": "5-7.7",
+      "n": 3301,
+      "frac": 20.7,
+      "cer_asp_medium": 26.05,
+      "cer_368_none": 27.92,
+      "cer_368_light": 26.77,
+      "cer_368_heavy": 26.76,
+      "d_geom_plus_med": -0.72,
+      "d_geom_plus_med_ci": [
+        -0.94,
+        -0.48
+      ],
+      "d_aug_none_light": -1.15,
+      "d_aug_light_heavy": -0.01,
+      "d_aug_light_heavy_ci": [
+        -0.32,
+        0.27
+      ]
+    },
+    {
+      "bin": "7.7-10.7",
+      "n": 5396,
+      "frac": 33.9,
+      "cer_asp_medium": 23.84,
+      "cer_368_none": 25.62,
+      "cer_368_light": 24.64,
+      "cer_368_heavy": 24.19,
+      "d_geom_plus_med": -0.8,
+      "d_geom_plus_med_ci": [
+        -0.94,
+        -0.64
+      ],
+      "d_aug_none_light": -0.99,
+      "d_aug_light_heavy": -0.45,
+      "d_aug_light_heavy_ci": [
+        -0.65,
+        -0.26
+      ]
+    },
+    {
+      "bin": "10.7-14",
+      "n": 2419,
+      "frac": 15.2,
+      "cer_asp_medium": 19.47,
+      "cer_368_none": 22.08,
+      "cer_368_light": 20.46,
+      "cer_368_heavy": 19.95,
+      "d_geom_plus_med": -0.99,
+      "d_geom_plus_med_ci": [
+        -1.22,
+        -0.77
+      ],
+      "d_aug_none_light": -1.62,
+      "d_aug_light_heavy": -0.52,
+      "d_aug_light_heavy_ci": [
+        -0.79,
+        -0.26
+      ]
+    },
+    {
+      "bin": ">14",
+      "n": 3308,
+      "frac": 20.8,
+      "cer_asp_medium": 16.87,
+      "cer_368_none": 19.27,
+      "cer_368_light": 18.01,
+      "cer_368_heavy": 17.34,
+      "d_geom_plus_med": -1.13,
+      "d_geom_plus_med_ci": [
+        -1.31,
+        -0.97
+      ],
+      "d_aug_none_light": -1.27,
+      "d_aug_light_heavy": -0.66,
+      "d_aug_light_heavy_ci": [
+        -0.9,
+        -0.44
+      ]
+    }
+  ]
+}

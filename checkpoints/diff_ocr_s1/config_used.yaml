@@ -1,0 +1,28 @@
+model:
+  name: diff_ocr
+  kwargs:
+    embed_dim: 256
+    dec_depth: 6
+    num_heads: 4
+diffusion:
+  max_len: 50
+  n_steps: 1000
+  inference_steps: 12
+image:
+  height: 48
+  width: 512
+  preserve_aspect: true
+augment:
+  level: medium
+max_text_len: 48
+train:
+  epochs: 80
+  batch_size: 64
+  num_workers: 2
+  lr: 0.0005
+  weight_decay: 0.05
+  warmup_steps: 1500
+  grad_accum: 1
+eval:
+  batch_size: 64
+val_seed: 0

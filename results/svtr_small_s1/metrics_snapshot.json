@@ -1,0 +1,79 @@
+{
+  "test_I": {
+    "cer": 14.924259300512363,
+    "ned": 15.553526490607803,
+    "wer": 43.002759725807884,
+    "seq_acc": 23.215686274509803
+  },
+  "test_II": {
+    "cer": 26.01337761687616,
+    "ned": 26.40556349039072,
+    "wer": 68.16567152898496,
+    "seq_acc": 3.457797301537496
+  },
+  "params_M": null,
+  "best_val_cer": 15.151552172797576,
+  "best_epoch": 53,
+  "ckpt": "checkpoints/svtr_small_s1/last.pt",
+  "config": {
+    "model": {
+      "name": "svtr",
+      "kwargs": {
+        "img_size": [
+          48,
+          512
+        ],
+        "embed_dims": [
+          96,
+          192,
+          256
+        ],
+        "depths": [
+          3,
+          6,
+          3
+        ],
+        "num_heads": [
+          3,
+          6,
+          8
+        ],
+        "windows": [
+          [
+            7,
+            11
+          ],
+          [
+            7,
+            11
+          ],
+          null
+        ],
+        "mlp_ratio": 2.0,
+        "drop": 0.1
+      }
+    },
+    "image": {
+      "height": 48,
+      "width": 512,
+      "preserve_aspect": true
+    },
+    "augment": {
+      "level": "medium"
+    },
+    "max_text_len": 80,
+    "train": {
+      "epochs": 80,
+      "batch_size": 64,
+      "num_workers": 4,
+      "lr": 0.0005,
+      "weight_decay": 0.05,
+      "warmup_steps": 1000,
+      "grad_accum": 1
+    },
+    "eval": {
+      "batch_size": 128
+    },
+    "val_seed": 0
+  }
+}

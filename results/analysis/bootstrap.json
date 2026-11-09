@@ -1,0 +1,413 @@
+{
+  "test_II": {
+    "point": {
+      "asp_medium": 21.876093887755697,
+      "368_none": 24.095907332058935,
+      "368_light": 22.871642988261062,
+      "368_heavy": 22.46108281093704,
+      "svtr": 25.18252722334355,
+      "diffocr": 24.612963971564554
+    },
+    "by_block": {
+      "1": {
+        "best_seed_ci": [
+          21.489,
+          21.964
+        ],
+        "asp_medium_mean_ci": [
+          21.652,
+          22.094
+        ],
+        "svtr_ci": [
+          24.95,
+          25.423
+        ],
+        "diffocr_ci": [
+          24.318,
+          24.899
+        ],
+        "d_none_to_light": [
+          -1.319,
+          -1.125
+        ],
+        "d_light_to_heavy": [
+          -0.528,
+          -0.299
+        ],
+        "d_light368_to_aspmedium": [
+          -1.088,
+          -0.905
+        ],
+        "d_aspmedium_vs_diffocr": [
+          2.555,
+          2.912
+        ],
+        "d_aspmedium_vs_svtr": [
+          3.158,
+          3.458
+        ],
+        "d_svtr_vs_diffocr": [
+          -0.781,
+          -0.366
+        ],
+        "best_seed_halfwidth": 0.237
+      },
+      "10": {
+        "best_seed_ci": [
+          21.306,
+          22.163
+        ],
+        "asp_medium_mean_ci": [
+          21.453,
+          22.301
+        ],
+        "svtr_ci": [
+          24.705,
+          25.644
+        ],
+        "diffocr_ci": [
+          24.081,
+          25.144
+        ],
+        "d_none_to_light": [
+          -1.318,
+          -1.123
+        ],
+        "d_light_to_heavy": [
+          -0.533,
+          -0.286
+        ],
+        "d_light368_to_aspmedium": [
+          -1.098,
+          -0.893
+        ],
+        "d_aspmedium_vs_diffocr": [
+          2.528,
+          2.941
+        ],
+        "d_aspmedium_vs_svtr": [
+          3.091,
+          3.506
+        ],
+        "d_svtr_vs_diffocr": [
+          -0.781,
+          -0.349
+        ],
+        "best_seed_halfwidth": 0.428
+      },
+      "25": {
+        "best_seed_ci": [
+          21.14,
+          22.331
+        ],
+        "asp_medium_mean_ci": [
+          21.285,
+          22.478
+        ],
+        "svtr_ci": [
+          24.483,
+          25.881
+        ],
+        "diffocr_ci": [
+          23.895,
+          25.355
+        ],
+        "d_none_to_light": [
+          -1.331,
+          -1.124
+        ],
+        "d_light_to_heavy": [
+          -0.535,
+          -0.286
+        ],
+        "d_light368_to_aspmedium": [
+          -1.104,
+          -0.876
+        ],
+        "d_aspmedium_vs_diffocr": [
+          2.488,
+          2.998
+        ],
+        "d_aspmedium_vs_svtr": [
+          3.048,
+          3.566
+        ],
+        "d_svtr_vs_diffocr": [
+          -0.799,
+          -0.34
+        ],
+        "best_seed_halfwidth": 0.595
+      },
+      "50": {
+        "best_seed_ci": [
+          20.903,
+          22.6
+        ],
+        "asp_medium_mean_ci": [
+          21.031,
+          22.741
+        ],
+        "svtr_ci": [
+          24.21,
+          26.139
+        ],
+        "diffocr_ci": [
+          23.562,
+          25.636
+        ],
+        "d_none_to_light": [
+          -1.335,
+          -1.118
+        ],
+        "d_light_to_heavy": [
+          -0.539,
+          -0.28
+        ],
+        "d_light368_to_aspmedium": [
+          -1.132,
+          -0.865
+        ],
+        "d_aspmedium_vs_diffocr": [
+          2.423,
+          3.049
+        ],
+        "d_aspmedium_vs_svtr": [
+          2.975,
+          3.65
+        ],
+        "d_svtr_vs_diffocr": [
+          -0.837,
+          -0.305
+        ],
+        "best_seed_halfwidth": 0.849
+      },
+      "100": {
+        "best_seed_ci": [
+          20.623,
+          22.842
+        ],
+        "asp_medium_mean_ci": [
+          20.764,
+          22.979
+        ],
+        "svtr_ci": [
+          23.898,
+          26.473
+        ],
+        "diffocr_ci": [
+          23.274,
+          25.957
+        ],
+        "d_none_to_light": [
+          -1.347,
+          -1.108
+        ],
+        "d_light_to_heavy": [
+          -0.566,
+          -0.267
+        ],
+        "d_light368_to_aspmedium": [
+          -1.146,
+          -0.844
+        ],
+        "d_aspmedium_vs_diffocr": [
+          2.347,
+          3.12
+        ],
+        "d_aspmedium_vs_svtr": [
+          2.849,
+          3.74
+        ],
+        "d_svtr_vs_diffocr": [
+          -0.861,
+          -0.26
+        ],
+        "best_seed_halfwidth": 1.109
+      },
+      "200": {
+        "best_seed_ci": [
+          20.205,
+          23.315
+        ],
+        "asp_medium_mean_ci": [
+          20.334,
+          23.47
+        ],
+        "svtr_ci": [
+          23.432,
+          27.001
+        ],
+        "diffocr_ci": [
+          22.756,
+          26.524
+        ],
+        "d_none_to_light": [
+          -1.359,
+          -1.089
+        ],
+        "d_light_to_heavy": [
+          -0.566,
+          -0.257
+        ],
+        "d_light368_to_aspmedium": [
+          -1.177,
+          -0.815
+        ],
+        "d_aspmedium_vs_diffocr": [
+          2.22,
+          3.235
+        ],
+        "d_aspmedium_vs_svtr": [
+          2.719,
+          3.902
+        ],
+        "d_svtr_vs_diffocr": [
+          -0.921,
+          -0.221
+        ],
+        "best_seed_halfwidth": 1.555
+      },
+      "400": {
+        "best_seed_ci": [
+          19.639,
+          23.91
+        ],
+        "asp_medium_mean_ci": [
+          19.758,
+          24.088
+        ],
+        "svtr_ci": [
+          22.735,
+          27.6
+        ],
+        "diffocr_ci": [
+          21.976,
+          27.229
+        ],
+        "d_none_to_light": [
+          -1.405,
+          -1.071
+        ],
+        "d_light_to_heavy": [
+          -0.597,
+          -0.23
+        ],
+        "d_light368_to_aspmedium": [
+          -1.241,
+          -0.765
+        ],
+        "d_aspmedium_vs_diffocr": [
+          2.044,
+          3.478
+        ],
+        "d_aspmedium_vs_svtr": [
+          2.516,
+          4.136
+        ],
+        "d_svtr_vs_diffocr": [
+          -0.941,
+          -0.155
+        ],
+        "best_seed_halfwidth": 2.136
+      },
+      "800": {
+        "best_seed_ci": [
+          18.899,
+          24.47
+        ],
+        "asp_medium_mean_ci": [
+          19.0,
+          24.653
+        ],
+        "svtr_ci": [
+          21.808,
+          28.396
+        ],
+        "diffocr_ci": [
+          21.096,
+          27.967
+        ],
+        "d_none_to_light": [
+          -1.437,
+          -1.029
+        ],
+        "d_light_to_heavy": [
+          -0.625,
+          -0.205
+        ],
+        "d_light368_to_aspmedium": [
+          -1.285,
+          -0.71
+        ],
+        "d_aspmedium_vs_diffocr": [
+          1.842,
+          3.655
+        ],
+        "d_aspmedium_vs_svtr": [
+          2.226,
+          4.44
+        ],
+        "d_svtr_vs_diffocr": [
+          -1.024,
+          -0.054
+        ],
+        "best_seed_halfwidth": 2.785
+      }
+    }
+  },
+  "test_I": {
+    "point": {
+      "asp_medium": 12.682854384792456,
+      "368_none": 13.761416796613947,
+      "368_light": 13.149922031632881,
+      "368_heavy": 13.07306749832925,
+      "svtr": 14.301626197371352,
+      "diffocr": 14.385163733570952
+    },
+    "by_block": {
+      "1": {
+        "best_seed_ci": [
+          12.319,
+          13.132
+        ],
+        "asp_medium_mean_ci": [
+          12.3,
+          13.077
+        ],
+        "svtr_ci": [
+          13.918,
+          14.723
+        ],
+        "diffocr_ci": [
+          13.942,
+          14.847
+        ],
+        "d_none_to_light": [
+          -0.767,
+          -0.459
+        ],
+        "d_light_to_heavy": [
+          -0.248,
+          0.101
+        ],
+        "d_light368_to_aspmedium": [
+          -0.612,
+          -0.328
+        ],
+        "d_aspmedium_vs_diffocr": [
+          1.444,
+          1.967
+        ],
+        "d_aspmedium_vs_svtr": [
+          1.411,
+          1.845
+        ],
+        "d_svtr_vs_diffocr": [
+          -0.213,
+          0.391
+        ],
+        "best_seed_halfwidth": 0.406
+      }
+    }
+  }
+}

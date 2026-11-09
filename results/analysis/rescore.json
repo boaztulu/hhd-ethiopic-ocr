@@ -1,0 +1,152 @@
+{
+  "test_I_gt_mismatches": 0,
+  "test_I_total_gt_ids": 89780,
+  "test_I_total_gt_chars_csv": 89780,
+  "abl_asp_48x512_s1|test_I": {
+    "cer_benchmark_procedure": 12.709,
+    "cer_ours": 12.709,
+    "cer_per_line_mean": 13.603,
+    "ned": 12.72
+  },
+  "abl_asp_48x512_s2|test_I": {
+    "cer_benchmark_procedure": 12.711,
+    "cer_ours": 12.711,
+    "cer_per_line_mean": 13.611,
+    "ned": 12.763
+  },
+  "abl_asp_48x512_s3|test_I": {
+    "cer_benchmark_procedure": 12.629,
+    "cer_ours": 12.629,
+    "cer_per_line_mean": 13.583,
+    "ned": 12.751
+  },
+  "crnn_vgg_s1|test_I": {
+    "cer_benchmark_procedure": 13.092,
+    "cer_ours": 13.092,
+    "cer_per_line_mean": 14.418,
+    "ned": 13.468
+  },
+  "crnn_vgg_s2_reeval|test_I": {
+    "cer_benchmark_procedure": 13.16,
+    "cer_ours": 13.16,
+    "cer_per_line_mean": 14.311,
+    "ned": 13.426
+  },
+  "crnn_vgg_s3|test_I": {
+    "cer_benchmark_procedure": 13.198,
+    "cer_ours": 13.198,
+    "cer_per_line_mean": 14.494,
+    "ned": 13.558
+  },
+  "abl_aug_none_s1|test_I": {
+    "cer_benchmark_procedure": 13.673,
+    "cer_ours": 13.673,
+    "cer_per_line_mean": 14.811,
+    "ned": 13.874
+  },
+  "abl_pub_48x368_s1|test_I": {
+    "cer_benchmark_procedure": 13.849,
+    "cer_ours": 13.849,
+    "cer_per_line_mean": 14.943,
+    "ned": 13.959
+  },
+  "abl_aug_heavy_s1|test_I": {
+    "cer_benchmark_procedure": 13.073,
+    "cer_ours": 13.073,
+    "cer_per_line_mean": 14.43,
+    "ned": 13.499
+  },
+  "svtr_small_s1|test_I": {
+    "cer_benchmark_procedure": 14.302,
+    "cer_ours": 14.302,
+    "cer_per_line_mean": 15.659,
+    "ned": 15.0
+  },
+  "diff_ocr_s1|test_I": {
+    "cer_benchmark_procedure": 14.385,
+    "cer_ours": 14.385,
+    "cer_per_line_mean": 15.223,
+    "ned": 14.432
+  },
+  "crnn_convnext_s1|test_I": {
+    "cer_benchmark_procedure": 28.905,
+    "cer_ours": 28.905,
+    "cer_per_line_mean": 23.682,
+    "ned": 22.972
+  },
+  "test_II_gt_mismatches": 0,
+  "test_II_total_gt_ids": 280917,
+  "test_II_total_gt_chars_csv": 280917,
+  "abl_asp_48x512_s1|test_II": {
+    "cer_benchmark_procedure": 21.858,
+    "cer_ours": 21.858,
+    "cer_per_line_mean": 22.326,
+    "ned": 21.73
+  },
+  "abl_asp_48x512_s2|test_II": {
+    "cer_benchmark_procedure": 21.732,
+    "cer_ours": 21.732,
+    "cer_per_line_mean": 22.197,
+    "ned": 21.624
+  },
+  "abl_asp_48x512_s3|test_II": {
+    "cer_benchmark_procedure": 22.039,
+    "cer_ours": 22.039,
+    "cer_per_line_mean": 22.528,
+    "ned": 21.931
+  },
+  "crnn_vgg_s1|test_II": {
+    "cer_benchmark_procedure": 22.768,
+    "cer_ours": 22.768,
+    "cer_per_line_mean": 23.282,
+    "ned": 22.643
+  },
+  "crnn_vgg_s2_reeval|test_II": {
+    "cer_benchmark_procedure": 22.787,
+    "cer_ours": 22.787,
+    "cer_per_line_mean": 23.412,
+    "ned": 22.804
+  },
+  "crnn_vgg_s3|test_II": {
+    "cer_benchmark_procedure": 23.06,
+    "cer_ours": 23.06,
+    "cer_per_line_mean": 23.46,
+    "ned": 22.843
+  },
+  "abl_aug_none_s1|test_II": {
+    "cer_benchmark_procedure": 24.012,
+    "cer_ours": 24.012,
+    "cer_per_line_mean": 24.437,
+    "ned": 23.805
+  },
+  "abl_pub_48x368_s1|test_II": {
+    "cer_benchmark_procedure": 24.18,
+    "cer_ours": 24.18,
+    "cer_per_line_mean": 24.459,
+    "ned": 23.81
+  },
+  "abl_aug_heavy_s1|test_II": {
+    "cer_benchmark_procedure": 22.461,
+    "cer_ours": 22.461,
+    "cer_per_line_mean": 23.011,
+    "ned": 22.431
+  },
+  "svtr_small_s1|test_II": {
+    "cer_benchmark_procedure": 25.183,
+    "cer_ours": 25.183,
+    "cer_per_line_mean": 25.988,
+    "ned": 25.562
+  },
+  "diff_ocr_s1|test_II": {
+    "cer_benchmark_procedure": 24.613,
+    "cer_ours": 24.613,
+    "cer_per_line_mean": 24.565,
+    "ned": 24.119
+  },
+  "crnn_convnext_s1|test_II": {
+    "cer_benchmark_procedure": 43.113,
+    "cer_ours": 43.113,
+    "cer_per_line_mean": 38.08,
+    "ned": 37.66
+  }
+}
