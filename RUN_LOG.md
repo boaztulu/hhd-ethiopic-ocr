@@ -427,3 +427,23 @@ Every new number comes from the existing checkpoints and prediction files. The s
 
 **Still open:** a 48×512 run with light augmentation (about 1.7 GPU-hours) would remove the
 remaining confound between geometry and augmentation.
+
+---
+
+## 2026-11-18: Per-seed intervals and seed variance (no new training)
+
+`scripts/analysis/per_seed_ci.py` gives each seed of the aspect-preserving CRNN-VGG its own 95%
+bootstrap interval (2,000 resamples of the saved per-line edit distances).
+
+- **Per seed.** Test-I: 12.709 [12.34, 13.12], 12.711 [12.31, 13.12], 12.629 [12.24, 13.03].
+  Test-II with single lines: 21.858 [21.62, 22.09], 21.732 [21.49, 21.98], 22.039 [21.80, 22.28];
+  with blocks of 50 lines: [20.95, 22.72], [20.92, 22.57], [21.24, 22.87]. Every interval excludes
+  the published 16.41 and 28.65.
+- **Spread.** The sample standard deviation of the unrounded per-seed CERs is 0.047 on Test-I and
+  0.154 on Test-II (0.156 if the seeds are first rounded to two decimals; the population value is
+  0.126), so the reported ± 0.15 is the correctly rounded sample value.
+- **Seed variance in the ablation.** The pooled seed standard deviation on Test-II over the
+  configurations with repeated runs is 0.15. The ablation intervals resample test lines only and
+  do not include it, so the geometry share of the 0.99-point step (roughly 0.6 points on the
+  point estimates, from the nesting of the augmentation levels) is approximate rather than the
+  firm "at least 0.58" stated on 2026-11-02.

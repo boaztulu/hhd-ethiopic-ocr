@@ -1,0 +1,138 @@
+{
+  "per_seed": {
+    "test_I": {
+      "abl_asp_48x512_s1": {
+        "cer": 12.708844,
+        "ci_block1": [
+          12.338,
+          13.1209
+        ]
+      },
+      "abl_asp_48x512_s2": {
+        "cer": 12.711072,
+        "ci_block1": [
+          12.3064,
+          13.1176
+        ]
+      },
+      "abl_asp_48x512_s3": {
+        "cer": 12.628648,
+        "ci_block1": [
+          12.2365,
+          13.0338
+        ]
+      }
+    },
+    "test_II": {
+      "abl_asp_48x512_s1": {
+        "cer": 21.857702,
+        "ci_block1": [
+          21.6202,
+          22.0876
+        ],
+        "ci_block50": [
+          20.9539,
+          22.7243
+        ]
+      },
+      "abl_asp_48x512_s2": {
+        "cer": 21.732042,
+        "ci_block1": [
+          21.4863,
+          21.983
+        ],
+        "ci_block50": [
+          20.9237,
+          22.5749
+        ]
+      },
+      "abl_asp_48x512_s3": {
+        "cer": 22.038538,
+        "ci_block1": [
+          21.8033,
+          22.2836
+        ],
+        "ci_block50": [
+          21.2408,
+          22.8748
+        ]
+      }
+    }
+  },
+  "spread": {
+    "test_I": {
+      "by_config": {
+        "asp_medium": {
+          "values": [
+            12.708844,
+            12.711072,
+            12.628648
+          ],
+          "mean": 12.682854,
+          "sample_sd": 0.047,
+          "sd_of_2dp_values": 0.0462,
+          "population_sd": 0.0383
+        },
+        "368_light": {
+          "values": [
+            13.092003,
+            13.159947,
+            13.197817
+          ],
+          "mean": 13.149922,
+          "sample_sd": 0.0536,
+          "sd_of_2dp_values": 0.0557,
+          "population_sd": 0.0438
+        },
+        "368_none": {
+          "values": [
+            13.673424,
+            13.84941
+          ],
+          "mean": 13.761417,
+          "sample_sd": 0.1244,
+          "sd_of_2dp_values": 0.1273,
+          "population_sd": 0.088
+        }
+      },
+      "pooled_seed_sd": 0.0716
+    },
+    "test_II": {
+      "by_config": {
+        "asp_medium": {
+          "values": [
+            21.857702,
+            21.732042,
+            22.038538
+          ],
+          "mean": 21.876094,
+          "sample_sd": 0.1541,
+          "sd_of_2dp_values": 0.1557,
+          "population_sd": 0.1258
+        },
+        "368_light": {
+          "values": [
+            22.767935,
+            22.787158,
+            23.059836
+          ],
+          "mean": 22.871643,
+          "sample_sd": 0.1633,
+          "sd_of_2dp_values": 0.162,
+          "population_sd": 0.1333
+        },
+        "368_none": {
+          "values": [
+            24.012075,
+            24.17974
+          ],
+          "mean": 24.095907,
+          "sample_sd": 0.1186,
+          "sd_of_2dp_values": 0.1202,
+          "population_sd": 0.0838
+        }
+      },
+      "pooled_seed_sd": 0.1516
+    }
+  }
+}

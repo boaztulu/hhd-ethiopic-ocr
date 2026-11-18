@@ -19,8 +19,8 @@ The per-line predictions for every test line are in `results/`.*
 Character error rate (CER) and normalised edit distance (NED) in per cent, lower being better.
 The published rows come from Table 3 of Belay et al. (2024), except the average human, which is
 reported in their text. The rows of this work use the best-validation checkpoint of each run, and
-± gives the standard deviation over three seeds (over two identically configured runs for the row
-without augmentation).
+± gives the sample standard deviation of the unrounded values over three seeds (over two
+identically configured runs for the row without augmentation).
 
 | Method | Params (M) | Test-I CER | Test-I NED | Test-II CER | Test-II NED |
 |---|---:|---:|---:|---:|---:|
@@ -44,7 +44,9 @@ without augmentation).
 
 CER is computed over the whole corpus (total edit distance over total ground-truth characters),
 as in Eq. 3 of Belay et al.; applying the procedure of their released test notebook to our
-predictions reproduces every CER above to within 0.001. The per-run numbers, including WER and
+predictions reproduces every CER above to within 0.001. The 95% bootstrap interval of each of the
+three seeds of the best configuration excludes the published values on both test sets
+(`results/analysis/per_seed_ci.json`). The per-run numbers, including WER and
 line accuracy, are in `tables/main_results.csv` and `results/<run>/metrics.json`. The PARSeq-Small
 run in those files stopped after 5 of its 80 epochs, so its numbers are not a converged result,
 and a TrOCR fine-tune could not be run because of a library incompatibility.
@@ -58,7 +60,9 @@ The gain over HPopt-Attn-CTC does not come from a longer schedule. HPopt-Attn-CT
 Test-II CER by only -0.23 points on average. Of the 6.77-point Test-II gain, 3.96 points are
 already present in the least-modified configuration (48×368 stretch, no augmentation, 25 epochs),
 0.59 come from training it to 80 epochs, 1.23 from light augmentation and 0.99 from the
-aspect-preserving canvas together with medium augmentation, at least 0.58 of which is geometry.
+aspect-preserving canvas together with medium augmentation. On the point estimates, roughly 0.6 of
+those 0.99 points is geometry, but the split rests on a single heavy-augmentation run and ignores
+variation between seeds (pooled standard deviation 0.15 on Test-II), so it is approximate.
 
 The ImageNet-pretrained ConvNeXt encoder fails because its stride-32 output leaves 16 CTC time
 steps for a 48×512 line, so no line longer than 16 characters can be transcribed. Its errors are

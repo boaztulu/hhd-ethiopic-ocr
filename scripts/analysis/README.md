@@ -1,6 +1,6 @@
 # Analyses
 
-Scripts behind the later analyses recorded in `RUN_LOG.md` (2026-11-02). All of them run on a CPU
+Scripts behind the later analyses recorded in `RUN_LOG.md` (2026-11-02 and 2026-11-18). All of them run on a CPU
 with the project environment (`python -P <script>`). Outputs go to `results/analysis/` and
 figures to `figures/analysis/`. Test images are read from the distributed zip files in
 `HHD-Ethiopic-data/` (`train_raw.zip`, `test.zip`), which is much faster than reading the
@@ -14,6 +14,7 @@ Run them in this order, since each one's inputs come from the step before.
 | `rescore.py` | Checks the ground truth against the benchmark's label arrays and re-scores every run with the CER procedure of the benchmark's test notebook, plus the mean of per-line CERs and NED; saves per-line edit distances |
 | `logs.py` | Best-validation epoch against last epoch, late-schedule slopes and the first epoch below 28.65, from `checkpoints/*/metrics.jsonl` |
 | `bootstrap.py` | Line-level and moving-block (page-scale) bootstrap intervals and paired contrasts |
+| `per_seed_ci.py` | 95% bootstrap intervals for each seed of the best configuration, the sample standard deviation of the unrounded per-seed CERs and the pooled seed standard deviation of the configurations with repeated runs |
 | `aspect_strat.py` | Ablation gains stratified by aspect ratio |
 | `cpu_jobs.py` | CTC posteriors of the three aspect-preserving CRNN-VGG seeds (validation, Test-I, Test-II), DiffOCR accuracy at 1 to 16 refinement steps and the CPU latency of all models in one session; needs the trained weights |
 | `lm_decode.py` | Character n-gram language model (interpolated Kneser-Ney) with CTC prefix beam search; `ppl` mode chooses the order and `tune` mode chooses alpha and beta on the validation data |
